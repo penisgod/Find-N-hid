@@ -1,0 +1,565 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Hide N' find",
+   LoadingTitle = "Property Of Swindler's Discord. / подонки#9090",
+   LoadingSubtitle = "подонки#9090",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "hide and find", -- Create a custom folder for your hub/game
+      FileName = "Hide N Find"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "xmgDZMXy", -- The Discord invite code, do not include discord.gg/
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Hide 'N Find | подонки#9090",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/xmgDZMXy)",
+      FileName = "Astronomical Key",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "SwindlerW"
+   }
+})
+
+Rayfield:Notify({
+   Title = "UI loaded",
+   Content = "Swindler",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local ObjectsTab = Window:CreateTab("Hider", 4483362458)
+local ChairButton = ObjectsTab:CreateButton({
+   Name = "Chair",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Chair")
+   end,
+})
+
+local TableButton = ObjectsTab:CreateButton({
+   Name = "Table",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Table")
+   end,
+})
+
+local TeddyButton = ObjectsTab:CreateButton({
+   Name = "Bear",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Teddy Bear")
+   end,
+})
+
+local BasketButton = ObjectsTab:CreateButton({
+   Name = "Basket",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Basket")
+   end,
+})
+
+local MicroscopeButton = ObjectsTab:CreateButton({
+   Name = "Microscope",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Microscope")
+   end,
+})
+
+local BookshelfButton = ObjectsTab:CreateButton({
+   Name = "Bookshelf",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Bookshelf")
+   end,
+})
+
+local TrashCanButton = ObjectsTab:CreateButton({
+   Name = "Trash Can",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Trash Can")
+   end,
+})
+
+local PopcornBucketButton = ObjectsTab:CreateButton({
+   Name = "Popcorn Bucket",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Popcorn Bucket")
+   end,
+})
+
+local OfficeChairButton = ObjectsTab:CreateButton({
+   Name = "Office Chair",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Office Chair")
+   end,
+})
+
+local DeskButton = ObjectsTab:CreateButton({
+   Name = "School Desk",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Desk")
+   end,
+})
+
+local ClassChairButton = ObjectsTab:CreateButton({
+   Name = "Class Chair",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Class Chair")
+   end,
+})
+
+local PhoneButton = ObjectsTab:CreateButton({
+   Name = "Old Phone",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Phone")
+   end,
+})
+
+local BookButton = ObjectsTab:CreateButton({
+   Name = "Book",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Book Stack")
+   end,
+})
+
+local CardBoardBoxButton = ObjectsTab:CreateButton({
+   Name = "Cardboard Box",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Cardboard Box")
+   end,
+})
+
+local BackpackButton = ObjectsTab:CreateButton({
+   Name = "Backpack",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Backpack")
+   end,
+})
+
+local LaptopButton = ObjectsTab:CreateButton({
+   Name = "Macbook",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Laptop")
+   end,
+})
+
+local TrophyButton = ObjectsTab:CreateButton({
+   Name = "Trophy",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Trophy")
+   end,
+})
+
+local CafeteriaChairButton = ObjectsTab:CreateButton({
+   Name = "Cafeteria Seat",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Cafeteria Chair")
+   end,
+})
+
+local MugButton = ObjectsTab:CreateButton({
+   Name = "Coffe Mug",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Mug")
+   end,
+})
+
+local PenHolderButton = ObjectsTab:CreateButton({
+   Name = "Pen Holder",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Pen Holder")
+   end,
+})
+
+local PictureFrameButton = ObjectsTab:CreateButton({
+   Name = "Picture Frame",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Picture Frame")
+   end,
+})
+
+local DeskLampButton = ObjectsTab:CreateButton({
+   Name = "Desk Lamp",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Desk Lamp")
+   end,
+})
+
+local PrinterButton = ObjectsTab:CreateButton({
+   Name = "Printer",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Printer")
+   end,
+})
+
+local PapersButton = ObjectsTab:CreateButton({
+   Name = "Papers",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Stack Of Papers")
+   end,
+})
+
+local CoffeMachineButton = ObjectsTab:CreateButton({
+   Name = "Coffe Machine",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Coffe Maker")
+   end,
+})
+
+local LunchBoxButton = ObjectsTab:CreateButton({
+   Name = "Lunch Box",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Lunch Box")
+   end,
+})
+
+local BeakerButton = ObjectsTab:CreateButton({
+   Name = "Science Beaker",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Beaker")
+   end,
+})
+
+local EmptyBeakerButton = ObjectsTab:CreateButton({
+   Name = "Empty Science Beaker",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Empty Beaker")
+   end,
+})
+
+local CrateButton = ObjectsTab:CreateButton({
+   Name = "Crate",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Crate")
+   end,
+})
+
+local PlantButton = ObjectsTab:CreateButton({
+   Name = "Normal Plant",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Plant")
+   end,
+})
+
+local BarrelButton = ObjectsTab:CreateButton({
+   Name = "Barrel",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Barrel")
+   end,
+})
+
+local TrafficConeButton = ObjectsTab:CreateButton({
+   Name = "Traffic Cone",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Traffic Cone")
+   end,
+})
+
+local StoolButton = ObjectsTab:CreateButton({
+   Name = "Stool",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Stool")
+   end,
+})
+
+local WoddenStoolButton = ObjectsTab:CreateButton({
+   Name = "Wooden Stool",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Wooden Stool")
+   end,
+})
+
+local ShoppingCartButton = ObjectsTab:CreateButton({
+   Name = "Shopping Cart",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Shopping Cart")
+   end,
+})
+
+
+local ShoppingBasketButton = ObjectsTab:CreateButton({
+   Name = "Shopping Basket",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Shopping Basket")
+   end,
+})
+
+local TryicleButton = ObjectsTab:CreateButton({
+   Name = "Tricycle",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Tricycle")
+   end,
+})
+
+local SoccerBallButton = ObjectsTab:CreateButton({
+   Name = "Soccer Ball",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Soccer Ball")
+   end,
+})
+
+local ToiletButton = ObjectsTab:CreateButton({
+   Name = "Toilet",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Toilet")
+   end,
+})
+
+local CandyBoxButton = ObjectsTab:CreateButton({
+   Name = "Candy Box",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Candy Box")
+   end,
+})
+
+local LampButton = ObjectsTab:CreateButton({
+   Name = "Lamp",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Lamp")
+   end,
+})
+
+local FoodJarButton = ObjectsTab:CreateButton({
+   Name = "Food Jar",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Food Jar")
+   end,
+})
+
+local SodaButton = ObjectsTab:CreateButton({
+   Name = "Soda Bottle",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Soda Bottle")
+   end,
+})
+
+local TVButton = ObjectsTab:CreateButton({
+   Name = "TV",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Televison")
+   end,
+})
+
+local FlowerPotButton = ObjectsTab:CreateButton({
+   Name = "Flower Pot",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Flower Pot")
+   end,
+})
+
+local LilliesButton = ObjectsTab:CreateButton({
+   Name = "Lillies",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Lillies")
+   end,
+})
+
+local CactusButton = ObjectsTab:CreateButton({
+   Name = "Cactus",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Cactus")
+   end,
+})
+
+local CacTusWithFlowerButton = ObjectsTab:CreateButton({
+   Name = "Cactus With A Flower",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Cactus With Flower")
+   end,
+})
+
+local SunflowerButton = ObjectsTab:CreateButton({
+   Name = "Sunflower",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Sunflower")
+   end,
+})
+
+local HibiscusButton = ObjectsTab:CreateButton({
+   Name = "Hibiscus",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Hibiscus")
+   end,
+})
+
+local FoodBoxButton = ObjectsTab:CreateButton({
+   Name = "Food Box",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Food Box")
+   end,
+})
+
+local FoodCanButton = ObjectsTab:CreateButton({
+   Name = "Food Can",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Food Can")
+   end,
+})
+
+local OrchidButton = ObjectsTab:CreateButton({
+   Name = "Orchid",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Orchid")
+   end,
+})
+
+local NightStandButton = ObjectsTab:CreateButton({
+   Name = "Night Stand",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Nightstand")
+   end,
+})
+
+local SideTableButton = ObjectsTab:CreateButton({
+   Name = "Side Table",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Side Table")
+   end,
+})
+
+local ToolboxButton = ObjectsTab:CreateButton({
+   Name = "Toolbox",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Toolbox")
+   end,
+})
+
+local StandingLampButton = ObjectsTab:CreateButton({
+   Name = "Standing Lamp",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Standing Lamp")
+   end,
+})
+
+local SaucePanButton = ObjectsTab:CreateButton({
+   Name = "Sauce Pan",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Sauce Pan")
+   end,
+})
+
+local TVStandButton = ObjectsTab:CreateButton({
+   Name = "Televison Stand",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Televison Stand")
+   end,
+})
+
+local BlenderButton = ObjectsTab:CreateButton({
+   Name = "Blender",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Blender")
+   end,
+})
+
+local BasketballButton = ObjectsTab:CreateButton({
+   Name = "Basketball",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Basketball")
+   end,
+})
+
+local PlateButton = ObjectsTab:CreateButton({
+   Name = "Plate",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Plate")
+   end,
+})
+
+local GlassButton = ObjectsTab:CreateButton({
+   Name = "Glass",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Glass")
+   end,
+})
+
+local FryingpanButton = ObjectsTab:CreateButton({
+   Name = "Frying Pan",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Frying Pan")
+   end,
+})
+
+local GarbageCanButton = ObjectsTab:CreateButton({
+   Name = "Garbage Can",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Garbage Can")
+   end,
+})
+
+local BushButton = ObjectsTab:CreateButton({
+   Name = "Bush",
+   Callback = function()
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Bush")
+   end,
+})
+
+local SeekerTab = Window:CreateTab("Seeker", 4483362458) -- Title, Image
+
+local Slider = SeekerTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {16, 100},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Speed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+   end,
+})
+
+local HiderESPButton = SeekerTab:CreateButton({
+   Name = "ESP on",
+   Callback = function()
+    getgenv().enabled = true --Toggle on/off
+    getgenv().uselocalplayer = false --Choose whether the ESP highlights LocalPlayer or not
+    getgenv().filluseteamcolor = false --Toggle fill color using player team color on/off
+    getgenv().outlineuseteamcolor = false --Toggle outline color using player team color on/off
+    getgenv().fillcolor = Color3.new(0, 0, 0) --Change fill color, no need to edit if using team color
+    getgenv().outlinecolor = Color3.new(1, 1, 1) --Change outline color, no need to edit if using team color
+    getgenv().filltrans = 0 --Change fill transparency
+    getgenv().outlinetrans = 0 --Change outline transparency
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zntly/highlight-esp/main/esp.lua"))()
+   end,
+})
+
+local AHidersESPButton = SeekerTab:CreateButton({
+   Name = "ESP off",
+   Callback = function()
+  getgenv().enabled = false --Toggle on/off
+    getgenv().uselocalplayer = false --Choose whether the ESP highlights LocalPlayer or not
+    getgenv().filluseteamcolor = false --Toggle fill color using player team color on/off
+    getgenv().outlineuseteamcolor = false --Toggle outline color using player team color on/off
+    getgenv().fillcolor = Color3.new(0, 0, 0) --Change fill color, no need to edit if using team color
+    getgenv().outlinecolor = Color3.new(1, 1, 1) --Change outline color, no need to edit if using team color
+    getgenv().filltrans = 0 --Change fill transparency
+    getgenv().outlinetrans = 0 --Change outline transparency
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zntly/highlight-esp/main/esp.lua"))()
+   end,
+})
+
+local Section = ObjectsTab:CreateSection("Misc")
+
+local AnotherSlider = ObjectsTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {16, 100},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Speed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+   end,
+})
