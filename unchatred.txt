@@ -212,7 +212,7 @@ local PapersButton = ObjectsTab:CreateButton({
 local CoffeMachineButton = ObjectsTab:CreateButton({
    Name = "Coffe Machine",
    Callback = function()
-   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Coffe Maker")
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Coffee Maker")
    end,
 })
 
