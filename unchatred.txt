@@ -346,7 +346,7 @@ local SodaButton = ObjectsTab:CreateButton({
 local TVButton = ObjectsTab:CreateButton({
    Name = "TV",
    Callback = function()
-   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Televison")
+   game:GetService("ReplicatedStorage").Interaction.Transform:FireServer("Television")
    end,
 })
 
